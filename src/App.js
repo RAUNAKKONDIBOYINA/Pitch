@@ -37,15 +37,15 @@ export default function App() {
         <Route
           path="/"
           element={
-            <Screen image="/1.jpeg">
-              <Button to="/intro-1" x="105" y="530" w="150" h="55" />
+            <Screen image="/1v2.jpg">
+              <Button to="/2v2" x="105" y="480" w="200" h="55" />
             </Screen>
           }
         />
         <Route
-          path="/intro-1"
+          path="/2v2"
           element={
-            <Screen image="/intro-1.jpg" back="/">
+            <Screen image="/2v2.jpg" back="/">
               <Button to="/intro-2" x="105" y="530" w="150" h="55" />
             </Screen>
           }
