@@ -4,7 +4,7 @@ import Screen from "./Screen";
 import "./styles.css";
 
 /* Change debug to `true` to see the invisible Buttons */
-export const debug = true;
+export const debug = false;
 
 /* Step 1
 <---- UPLOAD YOU OWN IMAGE FILES INTO /public
