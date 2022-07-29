@@ -45,24 +45,54 @@ export default function App() {
         <Route
           path="/2v2"
           element={
-            <Screen image="/2v2.jpg" back="/">
-              <Button to="/intro-2" x="105" y="530" w="150" h="55" />
+            <Screen image="/2v2.jpg">
+              <Button to="/3v2" x="105" y="530" w="150" h="55" />
             </Screen>
           }
         />
         <Route
-          path="/intro-2"
+          path="/3v2"
           element={
-            <Screen image="/intro-2.jpg" back="/intro-1">
-              <Button to="/intro-3" x="105" y="530" w="150" h="55" />
+            <Screen image="/3v2.jpg">
+              <Button to="/4v2" x="80" y="100" w="200" h="400" />
+              <Button to="/6" x="270" y="580" w="50" h="55" />
+              <Button to="/7" x="150" y="580" w="50" h="55" />
             </Screen>
           }
         />
         <Route
-          path="/intro-3"
+          path="/4v2"
           element={
-            <Screen image="/intro-3.jpg" back="/intro-2">
-              <Button to="/" x="105" y="530" w="150" h="55" />
+            <Screen image="/4v2.jpg">
+              <Button to="/5v2" x="290" y="500" w="50" h="55" />
+              <Button to="/6" x="270" y="580" w="50" h="55" />
+              <Button to="/7" x="150" y="580" w="50" h="55" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/5v2"
+          element={
+            <Screen image="/5v2.jpg" back="/4v2">
+              <Button to="/6" x="270" y="580" w="50" h="55" />
+              <Button to="/7" x="150" y="580" w="50" h="55" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/6"
+          element={
+            <Screen image="/6.jpg" back="/4v2">
+              <Button to="/" x="105" y="480" w="200" h="55" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/7"
+          element={
+            <Screen image="/7.jpg" back="/4v2">
+              <Button to="/5v2" x="100" y="70" w="200" h="500" />
+              <Button to="/6" x="250" y="580" w="50" h="55" />
             </Screen>
           }
         />
